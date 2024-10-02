@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 p-10">
+    <div class="contrair mx">
+        <h1>CRID CON AXION</h1>
+        <form id="crudForm">
+    </div>
+    <div>
+        <label for="name">Nombre</label>
+        <input type="text" id="name">
+    </div>
+
+    <div>
+        <label for="lastname">Apellido</label>
+        <input type="text" id="lastname">
+    </div>
+
+    <div>
+        <label for="phone">Telefono</label>
+        <input type="text" id="phone">
+    </div>
+
+    <div>
+        <label for="img">Imagen</label>
+        <input type="text" id="img">
+    </div>
+    <div>
+        <button type="submit">Guardar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+                <!--Los datos iran aqui-->
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+</body>
+</html>
