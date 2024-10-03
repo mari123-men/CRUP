@@ -20,12 +20,16 @@ const renderTable = (data) => {
     dataTable.innerHTML = '';
     data.forEach(item => {
         const row = `
-        <tr class="border-b">
-        <td class="">${item.name}</td>
-        <td class="">${item.lastName}</td>
-        <td class="">${item.phone}</td>
-        <td class=""><img src="${item.img}" alt=""></td>
-        </tr>`;
+    <tr class="border-b">
+    <td class="py-2 px-4">${item.name}</td>
+    <td class="py-2 px-4">${item.lastName}</td>
+    <td class="py-2 px-4">${item.phone}</td>
+    <td class="py-2 px-4"><img class="w-16 h-16 object.cover rounded" src="${item.img}" alt=""></td>
+    <td>
+        <button class="bg-yellow-500 text-white px-2 py-1 rounded" onclick="">Editar</button>
+        <button class="bg-red-500 text-white px-2 py-1 rounded" onclick="">Eliminar</button>
+    </td>
+    </tr>>`;
         dataTable.insertAdjacentHTML('beforeend', row);
     });
 }

@@ -11,37 +11,40 @@
 <body class="bg-gray-100 p-10">
     <div class="contrair mx">
         <h1>CRID CON AXION</h1>
-        <form id="crudForm">
+        <form id="crudForm" class="bg-write p-6 rounded">
     </div>
-    <div>
-        <label for="name">Nombre</label>
-        <input type="text" id="name">
-    </div>
-
-    <div>
-        <label for="lastname">Apellido</label>
-        <input type="text" id="lastname">
+    <div class="mb-4">
+        <label class="block text-gray-700" for="name">Nombre</label>
+        <input class="border border-gray-300 p-2 rounded w-full" type="text" id="name">
     </div>
 
-    <div>
+    <div class="mb-4">
+        
+        <label class="block text-gray-700" for="lastname">Apellido</label>
+        <input class="border border-gray-300 p-2 rounded w-full" type="text" id="lastname">
+    </div>
+
+    <div class="mb-4">
         <label for="phone">Telefono</label>
-        <input type="text" id="phone">
+        <input class="border border-gray-300 p-2 rounded w-full" type="text" id="phone">
     </div>
 
-    <div>
-        <label for="img">Imagen</label>
-        <input type="text" id="img">
+    <div class="mb-4">
+        <label class="block text-gray-700" for="img">Imagen</label>
+        <input class="border border-gray-300 p-2 rounded w-full" type="text" id="img">
     </div>
-    <div>
-        <button type="submit">Guardar</button>
+    <div class="mb-4">
+        <button class="bg-blue-500 text-white px-4 p-2 rounded" type="submit">Guardar</button>
+
         </form>
-        <table>
+
+        <table class="min-w-full bg-write shadow-md rounded-1g">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Telefono</th>
-                    <th>Imagen</th>
+                    <th class="py-2 px-4 bg-gray-200">Nombre</th>
+                    <th class="py-2 px-4 bg-gray-200">Apellido</th>
+                    <th class="py-2 px-4 bg-gray-200">Telefono</th>
+                    <th class="py-2 px-4 bg-gray-200">Imagen</th>
                 </tr>
             </thead>
             <tbody id="dataTable">
